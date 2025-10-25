@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiruthi Priyanga | Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Kiruthi<span>Priyanga</span></h1>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Hello, I'm <span class="highlight">Kiruthi Priyanga</span></h2>
+    <h3 class="typing"></h3>
+    <p>Turning ideas into interactive web experiences.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate web developer who enjoys crafting visually appealing and 
+      highly functional websites. My focus is on writing clean code and delivering 
+      seamless user experiences through modern web technologies.
+    </p>
+  </section>
+
+  <section id="skills" class="section skills">
+    <h2>Skills</h2>
+    <div class="skill-bars">
+      <div class="bar"><span>HTML</span><div class="progress html"></div></div>
+      <div class="bar"><span>CSS</span><div class="progress css"></div></div>
+      <div class="bar"><span>JavaScript</span><div class="progress js"></div></div>
+      <div class="bar"><span>React</span><div class="progress react"></div></div>
+    </div>
+  </section>
+
+  <section id="projects" class="section projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Portfolio+Site" alt="">
+        <h3>Portfolio Website</h3>
+        <p>Responsive personal portfolio showcasing projects and skills.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Todo+App" alt="">
+        <h3>To-Do App</h3>
+        <p>Task manager built with JavaScript featuring CRUD functionality.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Weather+App" alt="">
+        <h3>Weather App</h3>
+        <p>Displays real-time weather using an external API.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Kiruthi Priyanga | Designed with 💡 & Passion</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

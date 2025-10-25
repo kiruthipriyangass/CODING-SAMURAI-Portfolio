@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #66fcf1;
+}
+.logo span {
+  color: #45a29e;
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #c5c6c7;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: #66fcf1;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.hero h2 {
+  font-size: 2rem;
+}
+.hero .highlight {
+  color: #66fcf1;
+}
+.hero p {
+  margin: 10px 0 20px;
+  color: #c5c6c7;
+}
+.btn {
+  background: #66fcf1;
+  color: #0b0c10;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #45a29e;
+}
+
+/* Sections */
+.section {
+  padding: 80px 50px;
+  text-align: center;
+}
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #66fcf1;
+}
+
+/* Skills */
+.skill-bars {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.bar {
+  background: #1f2833;
+  border-radius: 25px;
+  margin: 15px 0;
+  overflow: hidden;
+  text-align: left;
+  padding: 5px 15px;
+}
+.bar span {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+.progress {
+  height: 8px;
+  border-radius: 5px;
+  background: #66fcf1;
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+.progress.html { width: 90%; }
+.progress.css { width: 85%; }
+.progress.js { width: 80%; }
+.progress.react { width: 70%; }
+
+/* Projects */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  background: #1f2833;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 280px;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-8px);
+}
+.card img {
+  width: 100%;
+  display: block;
+}
+.card h3 {
+  margin: 10px 0;
+  color: #66fcf1;
+}
+.card p {
+  color: #c5c6c7;
+  padding: 0 10px 15px;
+}
+
+/* Contact */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}
+.contact input,
+.contact textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+footer {
+  text-align: center;
+  background: #1f2833;
+  padding: 15px;
+  color: #c5c6c7;
+  margin-top: 40px;
+}
